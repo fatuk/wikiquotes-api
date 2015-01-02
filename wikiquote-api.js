@@ -1,9 +1,10 @@
 var WikiquoteApi = (function() {
-  var lang = 'en';
 
   var wqa = {};
+  
+  wqa.lang = 'ru';
 
-  var API_URL = "http://" + lang + ".wikiquote.org/w/api.php";
+  var API_URL = "http://" + wqa.lang + ".wikiquote.org/w/api.php";
 
   /**
    * Query based on "titles" parameter and return page id.
